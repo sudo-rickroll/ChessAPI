@@ -31,3 +31,4 @@ C:\Users\Ranga\OneDrive\Documents\Test\ChessConnect\obj\Debug\net8.0\refint\Ches
 C:\Users\Ranga\OneDrive\Documents\Test\ChessConnect\obj\Debug\net8.0\ChessConnect.pdb
 C:\Users\Ranga\OneDrive\Documents\Test\ChessConnect\obj\Debug\net8.0\ChessConnect.genruntimeconfig.cache
 C:\Users\Ranga\OneDrive\Documents\Test\ChessConnect\obj\Debug\net8.0\ref\ChessConnect.dll
+C:\Users\Ranga\OneDrive\Documents\Test\ChessConnect\obj\Debug\net8.0\ChessConnect.sourcelink.json
