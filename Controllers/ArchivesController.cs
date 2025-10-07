@@ -30,7 +30,7 @@ namespace ChessConnect.Controllers
                                     playerName,
                                     e.Message
                                 );
-                return NotFound();
+                return StatusCode(500, "Internal server error");
             }
         }
     }
