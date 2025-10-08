@@ -9,7 +9,6 @@ namespace ChessConnect.Services
         public async Task<Archive?> GetArchives(string playerName)
         {
             return await _archiveRepository.GetArchivesAsync(playerName);
-
         }
     }
 }
