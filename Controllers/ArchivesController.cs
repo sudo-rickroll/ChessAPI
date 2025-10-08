@@ -1,5 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using ChessConnect.Services;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace ChessConnect.Controllers
 {
