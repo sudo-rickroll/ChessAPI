@@ -6,10 +6,10 @@ namespace ChessConnect.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
-public class ArchivesController(MonthlyArchivesService service, ILogger<ArchivesController> logger
+public class ArchivesController(ArchivesService service, ILogger<ArchivesController> logger
                                 ) : ControllerBase
 {
-    private readonly MonthlyArchivesService _service = service;
+    private readonly ArchivesService _service = service;
     private readonly ILogger<ArchivesController> _logger = logger;
 
     [HttpGet]

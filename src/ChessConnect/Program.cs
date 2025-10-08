@@ -12,7 +12,7 @@ try
         client.DefaultRequestHeaders.Add("User-Agent", "ChessAPI/1.0.0");
     });
 
-    builder.Services.AddScoped<MonthlyArchivesService>();
+    builder.Services.AddScoped<ArchivesService>();
     builder.Services.AddControllers();
 
     var app = builder.Build();
