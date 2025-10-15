@@ -1,5 +1,4 @@
 using Moq;
-using FluentAssertions;
 using ChessConnect.Services;
 using ChessConnect.Interfaces;
 using ChessConnect.Models;
