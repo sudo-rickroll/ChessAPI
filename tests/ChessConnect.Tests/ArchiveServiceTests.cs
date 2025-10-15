@@ -17,8 +17,8 @@ public class ArchiveServiceTests
         _archiveService = new ArchiveService(_archiveRepositoryMock.Object);
     }
 
-    [Fact]
-    public async void GetArchives_ShouldReturnArchives_WhenPlayerExists()
+    [Test]
+    public async Task GetArchives_ShouldReturnArchives_WhenPlayerExists()
     {
         var player = "test";
         int year = DateTime.Now.Year;
@@ -28,19 +28,18 @@ public class ArchiveServiceTests
 
         var receivedArchive = await _archiveService.GetArchives(player);
 
-        receivedArchive.Should().NotBeNull();
-        receivedArchive.Should().BeEquivalentTo(expectedArchive);
+        await Assert.That(receivedArchive).IsNotNull();
+        await Assert.That(receivedArchive).IsEquivalentTo(expectedArchive);
     }
 
-    [Fact]
-    public async void GetArchives_ShouldReturnNull_WhenPlayerDoesNotExist()
+    [Test]
+    public async Task GetArchives_ShouldReturnNull_WhenPlayerDoesNotExist()
     {
         var player = "test_NA";
         _archiveRepositoryMock.Setup(repo => repo.GetArchivesAsync(player)).ReturnsAsync((Archive?)null);
 
         var receivedArchive = await _archiveService.GetArchives(player);
 
-        receivedArchive.Should().BeNull();
-
+        await Assert.That(receivedArchive).IsNull();
     }
 }
